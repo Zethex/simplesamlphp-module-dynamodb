@@ -1,0 +1,43 @@
+{
+    "name": "simplesamlphp/simplesamlphp-module-dynamodb",
+    "description": "A module that is able to store key/value pairs in an AWS DynamoDB store",
+    "type": "simplesamlphp-module",
+    "keywords": ["simplesamlphp", "dynamodb"],
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Dane Cousins",
+            "email": "dane@uq.edu.au"
+        }
+    ],
+    "config": {
+        "preferred-install": {
+            "simplesamlphp/simplesamlphp": "source",
+            "*": "dist"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleSAML\\Module\\dynamodb\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SimpleSAML\\Test\\Utils\\": "vendor/simplesamlphp/simplesamlphp/tests/Utils"
+        }
+    },
+    "require": {
+        "php": ">=5.5",
+        "simplesamlphp/composer-module-installer": "~1.1",
+        "webmozart/assert": "~1.4",
+        "aws/aws-sdk-php": "~3.0"
+    },
+    "require-dev": {
+        "simplesamlphp/simplesamlphp": "^1.17",
+        "phpunit/phpunit": "~4.8.36"
+    },
+    "support": {
+        "issues": "https://github.com/tvdijen/simplesamlphp-module-riak/issues",
+        "source": "https://github.com/tvdijen/simplesamlphp-module-riak"
+    }
+}
